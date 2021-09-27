@@ -1,0 +1,15 @@
+C:\Users\pc1\source\repos\PruebaDataSoft\NEGOCIO\bin\Debug\NEGOCIO.dll
+C:\Users\pc1\source\repos\PruebaDataSoft\NEGOCIO\bin\Debug\NEGOCIO.pdb
+C:\Users\pc1\source\repos\PruebaDataSoft\NEGOCIO\bin\Debug\DATOS.dll
+C:\Users\pc1\source\repos\PruebaDataSoft\NEGOCIO\bin\Debug\ENTIDAD.dll
+C:\Users\pc1\source\repos\PruebaDataSoft\NEGOCIO\bin\Debug\EntityFramework.dll
+C:\Users\pc1\source\repos\PruebaDataSoft\NEGOCIO\bin\Debug\DATOS.pdb
+C:\Users\pc1\source\repos\PruebaDataSoft\NEGOCIO\bin\Debug\DATOS.dll.config
+C:\Users\pc1\source\repos\PruebaDataSoft\NEGOCIO\bin\Debug\ENTIDAD.pdb
+C:\Users\pc1\source\repos\PruebaDataSoft\NEGOCIO\bin\Debug\EntityFramework.xml
+C:\Users\pc1\source\repos\PruebaDataSoft\NEGOCIO\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\pc1\source\repos\PruebaDataSoft\NEGOCIO\obj\Debug\NEGOCIO.csprojAssemblyReference.cache
+C:\Users\pc1\source\repos\PruebaDataSoft\NEGOCIO\obj\Debug\NEGOCIO.csproj.CoreCompileInputs.cache
+C:\Users\pc1\source\repos\PruebaDataSoft\NEGOCIO\obj\Debug\NEGOCIO.csproj.CopyComplete
+C:\Users\pc1\source\repos\PruebaDataSoft\NEGOCIO\obj\Debug\NEGOCIO.dll
+C:\Users\pc1\source\repos\PruebaDataSoft\NEGOCIO\obj\Debug\NEGOCIO.pdb

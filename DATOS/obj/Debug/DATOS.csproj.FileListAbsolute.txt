@@ -1,0 +1,16 @@
+C:\Users\pc1\source\repos\PruebaDataSoft\DATOS\bin\Debug\DATOS.dll.config
+C:\Users\pc1\source\repos\PruebaDataSoft\DATOS\bin\Debug\DATOS.dll
+C:\Users\pc1\source\repos\PruebaDataSoft\DATOS\bin\Debug\DATOS.pdb
+C:\Users\pc1\source\repos\PruebaDataSoft\DATOS\bin\Debug\ENTIDAD.dll
+C:\Users\pc1\source\repos\PruebaDataSoft\DATOS\bin\Debug\EntityFramework.dll
+C:\Users\pc1\source\repos\PruebaDataSoft\DATOS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pc1\source\repos\PruebaDataSoft\DATOS\bin\Debug\ENTIDAD.pdb
+C:\Users\pc1\source\repos\PruebaDataSoft\DATOS\bin\Debug\EntityFramework.xml
+C:\Users\pc1\source\repos\PruebaDataSoft\DATOS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pc1\source\repos\PruebaDataSoft\DATOS\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\pc1\source\repos\PruebaDataSoft\DATOS\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+C:\Users\pc1\source\repos\PruebaDataSoft\DATOS\obj\Debug\DATOS.csprojAssemblyReference.cache
+C:\Users\pc1\source\repos\PruebaDataSoft\DATOS\obj\Debug\DATOS.csproj.CoreCompileInputs.cache
+C:\Users\pc1\source\repos\PruebaDataSoft\DATOS\obj\Debug\DATOS.csproj.CopyComplete
+C:\Users\pc1\source\repos\PruebaDataSoft\DATOS\obj\Debug\DATOS.dll
+C:\Users\pc1\source\repos\PruebaDataSoft\DATOS\obj\Debug\DATOS.pdb

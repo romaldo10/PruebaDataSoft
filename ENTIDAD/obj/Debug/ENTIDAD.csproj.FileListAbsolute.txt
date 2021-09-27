@@ -1,0 +1,6 @@
+C:\Users\pc1\source\repos\PruebaDataSoft\ENTIDAD\bin\Debug\ENTIDAD.dll
+C:\Users\pc1\source\repos\PruebaDataSoft\ENTIDAD\bin\Debug\ENTIDAD.pdb
+C:\Users\pc1\source\repos\PruebaDataSoft\ENTIDAD\obj\Debug\ENTIDAD.csprojAssemblyReference.cache
+C:\Users\pc1\source\repos\PruebaDataSoft\ENTIDAD\obj\Debug\ENTIDAD.csproj.CoreCompileInputs.cache
+C:\Users\pc1\source\repos\PruebaDataSoft\ENTIDAD\obj\Debug\ENTIDAD.dll
+C:\Users\pc1\source\repos\PruebaDataSoft\ENTIDAD\obj\Debug\ENTIDAD.pdb
