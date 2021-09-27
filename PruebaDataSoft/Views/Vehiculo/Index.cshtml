@@ -1,0 +1,52 @@
+﻿@model IEnumerable<ENTIDAD.Vehiculo>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Vehiculos</h2>
+
+<p>
+    @Html.ActionLink("Agregar vehiculo", "Crear", "Vehiculo")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_Vehiculo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Placa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dueño)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Marca)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.ID_Vehiculo)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Placa)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Dueño)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Marca)
+    </td>
+    <td>
+        @Html.ActionLink("Editar", "Editar", new { id = item.ID_Vehiculo }) |
+        @Html.ActionLink("Detalles", "Detalle", new { id = item.ID_Vehiculo }) |
+        @Html.ActionLink("Borrar", "Borrar", new { id = item.ID_Vehiculo })
+    </td>
+</tr>
+}
+
+</table>

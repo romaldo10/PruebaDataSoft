@@ -30,6 +30,7 @@ namespace NEGOCIO
         {
             return obj.GetServicio(id);
         }
+
         //Solicita edicion
         public static void PutServicio(Servicios srv)
         {

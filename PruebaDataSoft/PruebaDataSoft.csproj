@@ -169,6 +169,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ServicioController.cs" />
+    <Compile Include="Controllers\VehiculoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -219,6 +220,11 @@
     <Content Include="Views\Servicio\Detalle.cshtml" />
     <Content Include="Views\Servicio\Editar.cshtml" />
     <Content Include="Views\Servicio\Borrar.cshtml" />
+    <Content Include="Views\Vehiculo\Index.cshtml" />
+    <Content Include="Views\Vehiculo\Crear.cshtml" />
+    <Content Include="Views\Vehiculo\Detalle.cshtml" />
+    <Content Include="Views\Vehiculo\Editar.cshtml" />
+    <Content Include="Views\Vehiculo\Borrar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
