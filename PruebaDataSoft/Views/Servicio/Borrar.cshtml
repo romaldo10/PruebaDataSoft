@@ -1,0 +1,49 @@
+﻿@model ENTIDAD.Servicios
+
+@{
+    ViewBag.Title = "Borrar servicio";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Borrar servicio</h2>
+
+<h3>Está seguro de eliminar el servicio?</h3>
+<div>
+    <h4>Servicio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ID_Servicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_Servicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripción)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripción)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Monto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Monto)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm("Borrar","Servicio",FormMethod.Post)) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Borrar" class="btn btn-default" /> |
+            @Html.ActionLink("Regresar", "Index")
+        </div>
+    }
+</div>

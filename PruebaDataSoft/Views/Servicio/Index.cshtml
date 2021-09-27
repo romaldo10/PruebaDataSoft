@@ -36,9 +36,9 @@
             @Html.DisplayFor(modelItem => item.Monto)
         </td>
         <td>
-            @Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Detalles", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Borrar", "Delete", new { /* id=item.PrimaryKey */ })
+            @Html.ActionLink("Editar", "Editar", new { id=item.ID_Servicio }) |
+            @Html.ActionLink("Detalles", "Detalle", new { id = item.ID_Servicio }) |
+            @Html.ActionLink("Borrar", "Borrar", new { id = item.ID_Servicio })
         </td>
     </tr>
 }

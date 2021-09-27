@@ -8,19 +8,39 @@ using System.Threading.Tasks;
 
 namespace NEGOCIO
 {
-   public class ServicioCN
+    public class ServicioCN
     {
         // Medodos CRUD capa de negocio entidad de Servicios 
         private static ServicioDALC obj = new ServicioDALC();
 
-        public static void Agregar(Servicios srv)
+        //Prepara insersion
+        public static void PostServicio(Servicios srv)
         {
-            obj.Agregar(srv);
+            obj.PostServicio(srv);
         }
 
+        //Solicita listado
         public static List<Servicios> ListarServicios()
         {
             return obj.ListarServicios();
         }
+
+        //Solicita dato
+        public static Servicios GetServicio(int id)
+        {
+            return obj.GetServicio(id);
+        }
+        //Solicita edicion
+        public static void PutServicio(Servicios srv)
+        {
+            obj.PutServicio(srv);
+        }
+
+        //Solicita borrar
+        public static void DeleteServicio(int id)
+        {
+            obj.DeleteServicio(id);
+        }
+
     }
 }
