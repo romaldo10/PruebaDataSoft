@@ -11,14 +11,14 @@ namespace PruebaDataSoft.Controllers
     //Controlador de entidad de servicios
     public class ServicioController : Controller
     {
-        // GET de entidad de Servicio
+        // GET de entidad de Servicio 
         public ActionResult Index()
         {
             var srv = ServicioCN.ListarServicios();
             return View(srv);
         }
 
-        // POST de entidad de Servicio
+        // POST de entidad de Servicio 
         public ActionResult Crear () 
         {
             return View();

@@ -10,7 +10,7 @@ namespace NEGOCIO
 {
    public class ServicioCN
     {
-        // Medodos CRUD capa de negocio entidad de servicios
+        // Medodos CRUD capa de negocio entidad de Servicios 
         private static ServicioDALC obj = new ServicioDALC();
 
         public static void Agregar(Servicios srv)

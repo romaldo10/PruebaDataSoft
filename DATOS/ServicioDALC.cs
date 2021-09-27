@@ -9,7 +9,7 @@ namespace DATOS
 {
    public  class ServicioDALC
     {
-        //Modelo de datos entidad de Servicios
+        //Modelo de datos entidad de Servicios 
         public void Agregar(Servicios srv)
         {
             using (var db = new PruebaDbContext())
