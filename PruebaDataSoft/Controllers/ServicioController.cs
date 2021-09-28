@@ -115,5 +115,26 @@ namespace PruebaDataSoft.Controllers
                 return View();
             }
         }
+
+        //Lista en select de asinar servicio
+        public JsonResult ListarServicios()
+        {
+            try
+            {
+                var lista = ServicioCN.ListarServicios();
+                return Json(new { data = lista }, JsonRequestBehavior.AllowGet);
+            }
+            catch (Exception ex)
+            {
+                return Json(new { ok = false, msg = ex.Message }, JsonRequestBehavior.AllowGet);
+            }
+        }
+
+        //Lista de operaciones
+        public ActionResult ListarOperaciones()
+        {
+            return View(ServicioCN.ListarOperaciones());
+        }
+
     }
 }

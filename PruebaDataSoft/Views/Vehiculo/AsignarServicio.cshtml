@@ -1,0 +1,106 @@
+﻿@model ENTIDAD.Vehiculo
+
+@{
+    ViewBag.Title = "AsignarServicio";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using (Html.BeginForm("AsignarServicio_Vehiculo", "Vehiculo", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <h2>Asignar Servicio</h2>
+    <div>
+        <h4>Vehiculo</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+
+                @Html.DisplayNameFor(model => model.ID_Vehiculo)
+            </dt>
+
+            <dd>
+                @Html.EditorFor(model => model.ID_Vehiculo, new { htmlAttributes = new { @disabled = "disabled", @id = "vehiculoId" } })
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Placa)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Placa)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Dueño)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Dueño)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Marca)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Marca)
+            </dd>
+
+        </dl>
+    </div>
+    <div class="form-horizontal">
+        <div class="form-group">
+            <p class="col-md-10">Seleccione el servicio</p>
+            <div class="col-md-10">
+                <select class="form-control" id="servicioId" name="servicioId">
+                </select>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-md-offset-3 col-md-4">
+                <br />
+                <button type="button" class="btn btn-primary btn-block" onclick="AsignarServicio()">
+                    <i class="glyphicon glyphicon-floppy-save"></i>  Asignar servicio
+                </button>
+            </div>
+        </div>
+    </div>
+    <p>
+        @Html.ActionLink("Regresar", "Index")
+    </p>
+
+}
+    @section scripts{
+        <script>
+            ListarServicios();
+            function AsignarServicio() {
+                var servicioId = $("#servicioId").val();
+                var vehiculoId = $("#vehiculoId").val();
+                servicioId = parseInt(servicioId);
+                if (servicioId < 1 || vehiculoId < 1) {
+                    alert("Debe escoger un servicio.");
+                    return;
+                }
+
+                $.ajax({
+                    url: "/Vehiculo/AsignarServicio_Vehiculo",
+                    type: "post",
+                    data: { servicioId, vehiculoId }
+                }).done(function (response) {
+
+                    if (response.ok) {
+                        alert("Asignación creada correctamente.");
+                        window.location = response.toRedirect;
+                    }
+                    else {
+                        alert(response.msg);
+                    }
+                }).fail(function (jqXHR, textStatus, errorThrown) {
+
+                });
+            }
+        </script>
+    }
+
+

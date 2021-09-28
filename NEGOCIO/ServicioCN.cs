@@ -43,5 +43,11 @@ namespace NEGOCIO
             obj.DeleteServicio(id);
         }
 
+        //Listar Operaciones
+        public static List<OperacionesCE> ListarOperaciones()
+        {
+           return obj.ListarOperaciones();
+        }
+
     }
 }

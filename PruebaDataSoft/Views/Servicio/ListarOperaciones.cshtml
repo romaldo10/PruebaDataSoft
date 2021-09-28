@@ -1,0 +1,79 @@
+﻿@model IEnumerable<ENTIDAD.OperacionesCE>
+
+@{
+    ViewBag.Title = "ListarOperaciones";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Lista de Operaciones</h2>
+
+<div class="form-horizontal">
+    <div class="form-group">
+        <p class="col-md-10">Seleccione el servicio</p>
+        <div class="col-md-10">
+            <select class="form-control sServicio" id="servicioId" name="servicioId"></select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <p class="col-md-10">Buscar dato</p>
+        <div class="col-md-10">
+            <input class="form-control" id="impBuscar" type="text" placeholder="Buscar..">
+        </div>
+    </div>
+</div>
+<table class="table table-striped table-sm" cellspacing="0" width="100%" id="tServicios">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Servicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Vehiculo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dueño)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Placa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Monto)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr id="trTabla">
+            <td id="idServicio">
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td id="servicio">
+                @Html.DisplayFor(modelItem => item.Servicio)
+            </td>
+            <td id="vehiculo">
+                @Html.DisplayFor(modelItem => item.Vehiculo)
+            </td>
+            <td id="dueno">
+                @Html.DisplayFor(modelItem => item.Dueño)
+            </td>
+            <td id="placa">
+                @Html.DisplayFor(modelItem => item.Placa)
+            </td>
+            <td id="monto">
+                @Html.DisplayFor(modelItem => item.Monto)
+            </td>
+
+        </tr>
+    }
+
+</table>
+@section scripts{
+    <script>
+        ListarServicios();
+    </script>
+  
+}

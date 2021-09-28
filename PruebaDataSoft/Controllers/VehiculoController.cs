@@ -128,5 +128,26 @@ namespace PruebaDataSoft.Controllers
             }
         }
 
+        //Asignar servicio a vehiculo
+        public ActionResult AsignarServicio(int id)
+        {
+            var vhc = VehiculoCN.GetVehiculo(id);
+            return View(vhc);
+            
+        }
+        [HttpPost]
+        public ActionResult AsignarServicio_Vehiculo(int servicioId, int vehiculoId)
+        {
+            try
+            {
+                VehiculoCN.AsignarServicio(servicioId, vehiculoId);
+                return Json(new { ok = true, toRedirect = Url.Action("Index") }, JsonRequestBehavior.AllowGet);
+            }
+            catch (Exception ex)
+            {
+                return Json(new { ok = false, msg = ex.Message }, JsonRequestBehavior.AllowGet);
+            }
+        }
+
     }
 }

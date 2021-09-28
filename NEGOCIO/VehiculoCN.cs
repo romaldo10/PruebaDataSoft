@@ -43,5 +43,10 @@ namespace NEGOCIO
             obj.DeleteVehiculo(id);
         }
 
+        //Solicita asignacion de servicio
+        public static void AsignarServicio(int servicioId, int vehiculoId)
+        {
+            obj.AsignarServicio(servicioId, vehiculoId);
+        }
     }
 }

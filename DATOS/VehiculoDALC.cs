@@ -66,5 +66,22 @@ namespace DATOS
 
         }
 
+        //Asignar servicio
+        public void AsignarServicio(int servicioId, int vehiculoId)
+        {
+            var asg = new Vehiculo_Servicio
+            {
+                ID_Servicio = servicioId,
+                ID_Vehiculo = vehiculoId
+
+            };
+
+            using (var db = new PruebaDbContext())
+            {
+                db.Vehiculo_Servicio.Add(asg);
+                db.SaveChanges();
+            }
+        }
+
     }
 }

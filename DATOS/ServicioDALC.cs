@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 
 namespace DATOS
 {
@@ -25,6 +26,7 @@ namespace DATOS
         {
             using (var db = new PruebaDbContext())
             {
+                db.Configuration.LazyLoadingEnabled = false;
                 return db.Servicios.ToList();
             }
         }
@@ -50,6 +52,11 @@ namespace DATOS
             }
         }
 
+        public List<OperacionesCE> ListarAsignaciones(int[] servicioId)
+        {
+            throw new NotImplementedException();
+        }
+
         //Borrar dato
         public void DeleteServicio(int id)
         {
@@ -60,8 +67,24 @@ namespace DATOS
                 db.SaveChanges();
 
             }
-
         }
+
+        //Listar Operaciones
+        public List<OperacionesCE> ListarOperaciones()
+        {
+            string sql = @"   select ve.[ID_Vehiculo-Servicio] as ID,s.Descripción as Servicio, v.Marca as Vehiculo, v.Dueño, v.Placa, s.Monto 
+                       from [Vehiculo-Servicio] ve
+                       inner join Vehiculo v on ve.ID_Vehiculo = v.ID_Vehiculo
+                       inner join Servicios s on ve.ID_Servicio = s.ID_Servicio
+                       order by ve.[ID_Vehiculo-Servicio] desc;";
+            using (var db = new PruebaDbContext())
+            {
+                return db.Database.SqlQuery<OperacionesCE>(sql).ToList();
+            }
+        }
+
+      
+
 
     }
 }

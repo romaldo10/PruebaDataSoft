@@ -186,6 +186,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\app.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -225,6 +226,8 @@
     <Content Include="Views\Vehiculo\Detalle.cshtml" />
     <Content Include="Views\Vehiculo\Editar.cshtml" />
     <Content Include="Views\Vehiculo\Borrar.cshtml" />
+    <Content Include="Views\Vehiculo\AsignarServicio.cshtml" />
+    <Content Include="Views\Servicio\ListarOperaciones.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
